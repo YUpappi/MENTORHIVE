@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./homepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="branding">
+                <a href=""><span>MENTORHIVE</span><img src="Assets/logo.png" alt="logo" class="branding-img"></a>
+               
+            </div>
+            <div class="profile-user">
+                   
+                <h2>Welcome Back Akeni</h2>
+            </div>
+            <div class="profile-text">
+                <h2>Akeni Oteji Baron</h2>
+                <p>Mentee</p>
+            </div>
+           
+            <nav class="menu">
+                <ul>
+                    <li><a href="./homepage.html"><img src="Assets/home.png" alt="">&nbsp;<span>Home</span></a></li>
+                    <li><a href="./All.html"><img src="Assets/location.png" alt="">
+                        &nbsp; <span>Explore</span></a></li>
+                    <li><a href="./mentorBooking.html"><img src="Assets/time.png" alt="">  &nbsp; <span>Booking </span></a></li>
+                    <li><a href="./Message.html"><img src="Assets/message.png" alt="">  &nbsp; <span>Message</span></a></li>
+                    <li><a href="./dasboard.html"><img src="Assets/settings.png" alt="">  &nbsp; <span>Dashboard</span></a></li>
+                </ul>
+            </nav>
+            <div class="personal-info">
+                <div class="personal__info-img"><img src="Assets/mentee.png" alt=""></div>
+                <div class="personal__info-link">
+                    <a href="./profile.html">Personal info</a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- =======================Main content ===========================-->
+        <main class="main-content">
+            <header class="dash-header">
+                <div class="header-text">
+                    <h1>dashboard</h1>
+                </div>
+                
+                <div class="search-bar">
+                    <input type="text" placeholder="Search Members">
+                </div>
+
+                <div class="header-icon">
+                    <a href=""><img src="Assets/message.png" alt="User" class="user-message"></a>
+
+                
+                    <a href=""><img src="Assets/calender.png" alt="User" class="user-calender"></a>
+
+                    <img src="Assets/mentee.png" alt="User" class="user-image">
+        
+            </div>
+
+            </header>
+
+            <section class="profile-section">
+                <div class="profile-img">
+                    <img src="Assets/mentee.png" alt="">
+                    <div class="pencil">
+                        <img src="Assets/pepicons-pencil_pen-circle.png" alt="">
+                    </div>
+                </div>
+              <div class="profile__text">
+                <h2>AKENI OTEJIRI BARON</h2>
+                <p>Product Manager Student At Alt</p>
+               
+              </div>
+              <div class="profile-img-2">
+                <img src="Assets/cuate.png" alt="">
+            </div>
+            </section>
+
+            <!-- ===================================================== -->
+            <div class="content-link">
+                <div class="content__link" >
+                  <a href="#" id="link1" class="active">Overview</a>
+                  <a href="#" id="link2">Commendations</a>
+                  <a href="#" id="link3">My mentor</a>
+                </div>  
+                
+              </div>
+
+            <div class="profile-content visible content" id="content1">
+            
+                <p>I am a product manager student at Alt who wants to get better at managing project and handling them with all tenaciousness.</p>
+                <div class="expert-header">
+                <h3 class="expert">Expertise</h3>
+                <a href="./design.html" class="expertise-button">Design</a>
+            </div>
+           
+                <h3 class="exper">Experience</h3>
+                <div class="experience">
+                    <div class="product">
+                        <img src="Assets/Vector.png" alt="Product Icon">
+                    <span>Product Manager</span>
+                    </div>
+                   
+                    <div class="present-button"> <a href="">Present</a></div>
+                </div>
+            </div>
+            <!-- ===================== -->
+            <div class="hidden content commend" id="content2">
+                <div class="commend-img">
+                    <img src="Assets/cuate-recomend.jpg" alt="">
+                </div>
+                
+                <p>Member has no commendations</p>
+            </div>
+            <!-- ============================== -->
+            <div class="hidden content commend" id="content3">
+                <div class="commend-img">
+                    <img src="Assets/pana.png" alt="">
+                </div>
+
+                <h2>No mentors reviewed yet</h2>
+            </div>
+            </main>
+            <script src="./JsAssets/mentors.js"></script>
+        </body>
