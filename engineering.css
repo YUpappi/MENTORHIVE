@@ -747,6 +747,7 @@ main {
     display: flex;
     align-items: center;
     gap: 10px;
+    justify-content: space-around;
 }
 
   li a {
@@ -764,7 +765,8 @@ main {
     padding-inline: 10px;
 }
 .profileheader__btn-img img{
-    width: 30px;
+    max-width: 30px;
+    width: 100%;
 }
 .profileheader__btn-dash a{
     color: #1B1B1B;
