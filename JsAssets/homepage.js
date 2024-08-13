@@ -46,18 +46,18 @@ mentorLoginBtn.forEach(button => {
 });
 
 
-hrefLinks.forEach(link => {
-    link.addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent default link behavior
-        document.body.classList.add('fade-out');
+// hrefLinks.forEach(link => {
+//     link.addEventListener('click', function(event) {
+//         event.preventDefault(); // Prevent default link behavior
+//         document.body.classList.add('fade-out');
 
-        const targetHref = this.getAttribute('href');
+//         const targetHref = this.getAttribute('href');
 
-        setTimeout(() => {
-            window.location.href = targetHref;
-        }, 500); // Delay in milliseconds for fade-out effect
-    });
-});
+//         setTimeout(() => {
+//             window.location.href = targetHref;
+//         }, 500); // Delay in milliseconds for fade-out effect
+//     });
+// });
 
 
 
