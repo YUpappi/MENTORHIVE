@@ -95,7 +95,6 @@ input:focus{
 
 /* ========================mobile screen styles================= */
 .hamburger-icon {
-    /* margin: auto 0; */
     display: none;
     cursor: pointer;
   }
@@ -135,10 +134,11 @@ input:focus{
     position: absolute;
     top: -100%;
     left: 0;
-    height: 40vh;
+    height: 45vh;
     width: 100%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     z-index: 100;
+    animation: fade-slide-in .5s ease-in-out ;
   }
   .mobile-menu-nav{
     display: flex;
@@ -742,8 +742,7 @@ main {
     width: 100%;
 }
 .nav ul,
-.profileheader-btn,
-.profileheader__btn-search{
+.profileheader-btn{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -759,14 +758,17 @@ main {
 }
 .profileheader__btn-dash {
     display: flex;
+    align-items: center;
+}
+.profileheader__btn-img{
+    max-width: 30px;
+    width: 100%;
+}
+.dash-link{
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-inline: 10px;
-}
-.profileheader__btn-img img{
-    max-width: 30px;
-    width: 100%;
 }
 .profileheader__btn-dash a{
     color: #1B1B1B;
@@ -887,8 +889,8 @@ main {
 .bio__section{
     display: flex;
     justify-content: space-between;
-    padding: 40px 20px;
-    flex-wrap: wrap;
+    padding: 40px 10px;
+    column-gap: 10px;
 }
 
 .bio-content {
@@ -943,6 +945,7 @@ main {
     box-shadow: 2px 4px 8px rgba(0,0,0,0.5);
 }
 
+
 .cta-box h3 {
     font-weight: bold;
     font-size: 2.4rem;
@@ -957,16 +960,19 @@ main {
 .cta-box p span{
     color: #37897B;
 }
-.cta-btn{
-    border: none;
+
+.cta-btn {
+   
     background-color: #FF8800;
-    color: #fff;
     font-size: 1.6rem;
-    padding: 10px;
-    max-width: 325px;
-    width: 100%;
+    padding: 8px 10px;
     border-radius: 5px;
     text-align: center;
+    max-width: 325px;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    
 }
 /* =============================================== */
 
@@ -1664,12 +1670,13 @@ main {
 footer {
     background-color: #EDEDED;
     padding-top: 30px ;
+   
 }
  .footer__container{
     max-width: 1350px;
+    width: 100%;
     margin: 0 auto;
-    padding-top: 15px;
-    padding-bottom: 50px;
+    padding: 15px 20px 50px;
 }
 .footer__content{
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -1679,6 +1686,7 @@ footer {
     font-size: 1.6rem;
     font-weight: bold;
     margin-bottom: 1rem;
+    padding-left: 12px;
 }
 .footer__data input{
     padding: 10px ;
@@ -1848,7 +1856,7 @@ form a{
      display: block;
     }
     .mobile-menu{
-     padding-top: 20px;
+     padding-top: 0px;
      background-color: #fff;
      transition: .4s;
     }
@@ -1856,7 +1864,7 @@ form a{
      display: block;
  }
  .open .mobile-menu{
-        top: 56.9px;
+        top: 90px;
         position: fixed;
       
  }
@@ -1871,14 +1879,14 @@ form a{
         /* .footer__content{
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         } */
-        .bio-content {
+        /* .bio-content {
             max-width: 500px;
             width: 100%;
         }
         .cta-box {
             max-width: 400px;
             width: 100%;
-        }
+        } */
     
 
     .mentor-card,
@@ -1917,10 +1925,7 @@ form a{
         font-size: 50%;
     }
   
-    .bio__section{
-       justify-content: center;
-       gap: 10px;
-   }
+ 
    .toolkit img {
     width: 100%;
     max-width: 120px;
@@ -1946,18 +1951,15 @@ form a{
  .login-btn {
     display: none;
  }
- .bio__section,
  .toolkit-sub{
     justify-content: space-around;
 }
- .bio-content {
-    max-width: 400px;
-    width: 100%;
-}
-.cta-box {
-    max-width: 300px;
-    width: 100%;
-}
+
+
+ /* .cta-box,
+ .bio-content{
+    flex: 1;
+ } */
 
  .mentor-reviews {
     justify-content: space-evenly;
@@ -1970,6 +1972,7 @@ form a{
     max-width: 320px;
 }
 .footer__content{
+    padding-inline: 20px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
@@ -1983,4 +1986,8 @@ form a{
         flex-wrap: wrap;
         
     }
+    .bio__section{
+        flex-wrap: wrap;
+        padding: 40px 3px;
+     }
 }
