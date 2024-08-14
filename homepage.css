@@ -624,13 +624,13 @@ a{
   font-weight: 400;
   color: #000;
 }  
-  .browse-button {
+.browse-button{
+  margin-top: 20px;
+}
+  .browse-button a {
     background-color: orange;
     color: white;
     border: none;
-    width: 100%;
-    max-width: 210px;
-    margin: 30px auto 0;
     padding: 15px 10px;
     font-size: 1.6rem;
     line-height: 17px;
@@ -640,7 +640,7 @@ a{
     transition: background-color .3s linear;
   }
   
-  .browse-button:hover {
+  .browse-button a:hover {
     background-color: #cc8400;
   }
   

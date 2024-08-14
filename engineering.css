@@ -773,19 +773,27 @@ main {
     font-size: 1.2rem;
     font-weight: 400;
 }
+.booking a {
+    background-color: #37897B;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 12px 40px;
+    font-weight: bold;
+    border-radius: 5px;
+}
 
 
 .profilebrowse a {
     background-color: #37897B;
     color: #fff;
     font-size: 1.2rem;
-    padding: 12px 10px;
+    padding: 12px 15px;
     font-weight: bold;
     border-radius: 5px;
 }
 .profilelogin-btn a{
     border: 1px solid #37897B;
-    padding: 15px 43px;
+    padding: 12px 43px;
     color: #37897B;
     font-weight: bold;
     border-radius: 5px;
